@@ -8,7 +8,7 @@ local Window = Library:CreateWindow"AmountDeathsFarm"
 local w1 = Library:CreateWindow"Close Gui Setup"
 Window:AddToggle({text = "DeathFarm", flag = "toggle", state = false, callback = function(a)
 aa = a
-while aa do task.wait(0.01) --Change autofarm speed if you want--
+while aa do task.wait(0.09) --Change autofarm speed if you want--
    pcall(function()
        for i,v in pairs(game:GetService("Workspace"):GetDescendants()) do
            if v:IsA("TouchTransmitter") and v.Parent.Name == "Win" then
